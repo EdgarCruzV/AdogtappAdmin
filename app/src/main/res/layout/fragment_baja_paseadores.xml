@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/fragment_baja_paseadores"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".MenuFragments.BajaPaseadores.BajaPaseadores">
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/baja_paseadores_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</FrameLayout>

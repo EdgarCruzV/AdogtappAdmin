@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="___________Altas___________"/>
+        <item android:id="@+id/layout_perritos"
+              android:icon="@drawable/huella"
+              android:title="Perritos"/>
+
+        <item android:id="@+id/layout_tienda"
+              android:icon="@drawable/restaurant"
+              android:title="Tienda"/>
+        <item android:id="@+id/layout_extras"
+              android:icon="@drawable/extras"
+              android:title="Extras"/>
+        <item android:id="@+id/layout_paseadores"
+              android:icon="@drawable/carreola"
+              android:title="Paseadores"/>
+        <item android:title="___________Bajas___________"/>
+        <item android:id="@+id/layout_baja_perritos"
+              android:icon="@drawable/huella"
+              android:title="Baja de Perritos"/>
+        <item android:id="@+id/layout_baja_tienda"
+              android:icon="@drawable/restaurant"
+              android:title="Baja de Artículos de Tienda"/>
+        <item android:id="@+id/layout_baja_extras"
+              android:icon="@drawable/extras"
+              android:title="Baja de Artículos de Extras"/>
+        <item android:id="@+id/layout_baja_paseadores"
+              android:icon="@drawable/carreola"
+              android:title="Baja de Paseadores"/>
+        <item android:title="____________________________________"/>
+        <item android:id="@+id/layout_actualizacion_datos"
+              android:icon="@drawable/ic_contacto"
+              android:title="Mi Cuenta"/>
+
+    </group>
+</menu>

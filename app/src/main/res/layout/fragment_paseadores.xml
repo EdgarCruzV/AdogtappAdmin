@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".MenuFragments.Paseadores">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            tools:context=".MainActivity">
+
+        <EditText
+                android:id="@+id/nombre_paseadores"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Nombre del Paseador"
+                android:paddingLeft="16dp"
+                android:inputType="textCapWords"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/paseadores_foto_button"/>
+
+        <EditText
+                android:id="@+id/colonia_paseadores"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Colonia"
+                android:inputType="textCapWords"
+                android:paddingLeft="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/nombre_paseadores"
+                app:layout_constraintStart_toStartOf="@+id/nombre_paseadores"
+                app:layout_constraintTop_toBottomOf="@+id/nombre_paseadores" />
+
+        <EditText
+                android:id="@+id/celular_paseadores"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Celular"
+                android:inputType="number"
+                android:paddingLeft="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/colonia_paseadores"
+                app:layout_constraintStart_toStartOf="@+id/colonia_paseadores"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/colonia_paseadores"/>
+        <EditText
+                android:id="@+id/descripcion_paseadores"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Descripción"
+                android:inputType="textCapSentences"
+                android:paddingLeft="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/celular_paseadores"
+                app:layout_constraintStart_toStartOf="@+id/celular_paseadores"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/celular_paseadores"/>
+
+        <EditText
+                android:id="@+id/horario_paseadores"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Horarios. Ej: Mar 9:00-11:00 Vie 9:00-11:00."
+                android:inputType="textCapSentences"
+                android:paddingLeft="16dp"
+                app:layout_constraintStart_toStartOf="@+id/descripcion_paseadores"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/descripcion_paseadores"
+                app:layout_constraintTop_toBottomOf="@+id/descripcion_paseadores"/>
+
+        <Button
+                android:id="@+id/registrar_paseadores"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Registrar Paseador"
+                app:layout_constraintEnd_toEndOf="@+id/horario_paseadores"
+                app:layout_constraintStart_toStartOf="@+id/horario_paseadores"
+                app:layout_constraintTop_toBottomOf="@+id/horario_paseadores"
+                app:layout_constraintHorizontal_bias="0.0"
+        />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:text="Button"
+
+                app:civ_border_width="4dp"
+
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/redonditos_register_photo_button"
+
+                android:id="@+id/paseadores_foto_button"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintHorizontal_bias="0.497"/>
+        <ImageView
+                android:layout_width="69dp"
+                android:layout_height="62dp"
+                app:srcCompat="@android:drawable/ic_input_add"
+                android:id="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/paseadores_foto_button"
+                app:layout_constraintBottom_toBottomOf="@+id/paseadores_foto_button"
+                app:layout_constraintStart_toStartOf="@+id/paseadores_foto_button"
+                app:layout_constraintEnd_toEndOf="@+id/paseadores_foto_button"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintVertical_bias="1.0"/>
+        <TextView
+                android:text="Click para añadir foto del paseador"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:id="@+id/textView3" android:textSize="12sp"
+                android:layout_marginTop="60dp"
+                app:layout_constraintTop_toTopOf="@+id/imageView2"
+                app:layout_constraintBottom_toTopOf="@+id/nombre_paseadores"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.105"
+                android:textColor="@android:color/tertiary_text_light"
+                app:layout_constraintHorizontal_bias="0.272"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

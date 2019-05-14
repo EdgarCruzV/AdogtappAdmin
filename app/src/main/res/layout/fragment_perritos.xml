@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".MenuFragments.Perritos">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:background="@color/colorPrimary"
+                                                 tools:context=".MainActivity">
+
+        <EditText
+                android:id="@+id/nombre_perrito"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Nombre del Perrito"
+                android:paddingLeft="16dp"
+                android:inputType="textCapWords"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/perrito_foto_button"/>
+
+        <EditText
+                android:id="@+id/edad_perrito"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Edad. Ej: 3 meses"
+                android:inputType="text"
+                android:paddingLeft="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/nombre_perrito"
+                app:layout_constraintStart_toStartOf="@+id/nombre_perrito"
+                app:layout_constraintTop_toBottomOf="@+id/nombre_perrito" />
+
+        <EditText
+                android:id="@+id/contacto_perrito"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Contacto. Ej: Huellitas de Acero"
+                android:inputType="textCapWords"
+                android:paddingLeft="16dp"
+                app:layout_constraintStart_toStartOf="@+id/descripcion_perrito"
+                app:layout_constraintEnd_toEndOf="@+id/descripcion_perrito" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/descripcion_perrito"
+                app:layout_constraintHorizontal_bias="1.0"/>
+
+        <EditText
+                android:id="@+id/descripcion_perrito"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Descripción."
+                android:inputType="textCapSentences"
+                android:paddingLeft="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/spinner"
+                app:layout_constraintStart_toStartOf="@+id/spinner" app:layout_constraintEnd_toEndOf="@+id/spinner"
+                android:layout_marginTop="8dp" app:layout_constraintHorizontal_bias="0.0"/>
+        <EditText
+                android:id="@+id/talla_perrito"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Talla. Ej: Mediano"
+                android:inputType="textCapSentences"
+                android:paddingLeft="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/edad_perrito"
+                app:layout_constraintStart_toStartOf="@+id/edad_perrito"
+                app:layout_constraintTop_toBottomOf="@+id/edad_perrito"/>
+        <Button
+                android:id="@+id/registrar_perrito"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="Registrar Perrito"
+                app:layout_constraintEnd_toEndOf="@+id/contacto_perrito"
+                app:layout_constraintStart_toStartOf="@+id/contacto_perrito"
+                app:layout_constraintTop_toBottomOf="@+id/contacto_perrito" app:layout_constraintHorizontal_bias="0.0"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:text="Button"
+
+                app:civ_border_width="4dp"
+
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/redonditos_register_photo_button"
+
+                android:id="@+id/perrito_foto_button" android:layout_marginTop="32dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintHorizontal_bias="0.497"/>
+        <ImageView
+                android:layout_width="69dp"
+                android:layout_height="62dp" app:srcCompat="@android:drawable/ic_input_add"
+                android:id="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/perrito_foto_button"
+                app:layout_constraintBottom_toBottomOf="@+id/perrito_foto_button"
+                app:layout_constraintStart_toStartOf="@+id/perrito_foto_button"
+                app:layout_constraintEnd_toEndOf="@+id/perrito_foto_button" app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintVertical_bias="1.0"/>
+        <TextView
+                android:text="Click para añadir foto del perrito"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:id="@+id/textView3" android:textSize="12sp"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/imageView2"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/nombre_perrito"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="@+id/imageView2"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.857" android:textColor="@android:color/tertiary_text_light"/>
+        <Spinner
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:autofillHints="Género"
+                android:id="@+id/spinner"
+                app:layout_constraintStart_toStartOf="@+id/talla_perrito"
+                app:layout_constraintEnd_toEndOf="@+id/talla_perrito" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/talla_perrito"
+                android:background="@android:color/background_light"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
